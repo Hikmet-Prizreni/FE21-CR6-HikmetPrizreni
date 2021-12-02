@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+.hero {
+    background-image: url(/assets/trips/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    text-shadow: 5px 5px 10px #35393a;
+    -webkit-text-stroke: 0.3px rgb(255, 255, 255);
+}
+
+.page-title {
+    height: 20vh;
+    width: 40vw;
+    margin: auto;
+    font-family: 'MonteCarlo', cursive;
+}

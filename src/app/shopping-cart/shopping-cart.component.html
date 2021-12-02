@@ -1,0 +1,27 @@
+<div class="p-5">
+    <div class="h1">Total summe : {{ summe }}</div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col" *ngFor="let booking of bookings">
+            <div class="card m-3">
+                <img src="{{ booking.img }} " class="card-img-top " alt="{{ booking.destination }} ">
+                <div class="card-header ">
+                    <h5 class="card-title ">{{ booking.destination }}</h5>
+                </div>
+                <div class="card-body">
+
+                    <p class="card-text">{{ booking.startDate }}
+                    </p>
+                    <p class="card-text">{{ booking.duration }}
+                    </p>
+                    <p class="card-text">{{ booking.description }}
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <p href="# " class="btn btn-success m-1"> {{ booking.price }}</p>
+                    <p class="btn btn-success m-1" (click)="addToCart(booking)">Booked</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="p-5">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col" *ngFor="let trip of trips">
+            <div class="card m-3">
+                <img src="{{ trip.img }} " class="card-img-top " alt="{{ trip.destination }} ">
+                <div class="card-header ">
+                    <h5 class="card-title ">{{ trip.destination }}e</h5>
+                </div>
+                <div class="card-body">
+
+                    <p class="card-text">{{ trip.startDate }}
+                    </p>
+                    <p class="card-text">{{ trip.duration }}
+                    </p>
+                    <p class="card-text">{{ trip.description }}
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <p href="# " class="btn btn-success m-1"> {{ trip.price }}</p>
+                    <p class="btn btn-success m-1" (click)="addToCart(trip)">Book!</p>
+                </div>
+            </div>
+        </div>
+    </div>
