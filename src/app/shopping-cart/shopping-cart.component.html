@@ -1,5 +1,5 @@
 <div class="p-5">
-    <div class="h1">Total summe : {{ summe }}</div>
+    <div class="h1 text-warning">Total summe : {{ summe }}</div>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
         <div class="col" *ngFor="let booking of bookings">
             <div class="card m-3">
@@ -18,7 +18,7 @@
                 </div>
                 <div class="card-footer">
                     <p href="# " class="btn btn-success m-1"> {{ booking.price }}</p>
-                    <p class="btn btn-success m-1" (click)="addToCart(booking)">Booked</p>
+                    <p class="btn btn-warning m-1" (click)="addToCart(booking)">Booked</p>
                 </div>
             </div>
         </div>
